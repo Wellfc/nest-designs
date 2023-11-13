@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+/*-------------COLOR PALLET------------------*/
+:root {
+    --app-white: #fff;
+    --app-light-gray: #e2e2e2;
+    --app-medium-gray: #8f8f8f;
+    --app-gray-text: #303030;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    font-family:inherit;
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 100%;
+}
+
+body {
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    background-color: var(--app-white);
+    overflow:auto;
+    line-height: 1.5;
+}
+
+main {
+    overflow: hidden;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flexbox {
+    display:flex;
+}
+ 
+h1 {
+    font-size: 55px;
+    font-weight: 400;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--app-gray-text);
+    letter-spacing: 0.4px;
+}
+
+p {
+    font-size:16px;
+    font-weight: 500;
+    color: var(--app-gray-text);
+}
+
+a {
+    color: var(--app-gray-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
