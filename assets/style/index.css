@@ -1,1 +1,53 @@
-@import "./reset.css" 
+@import "./reset.css";
+
+/*--------------HEADER----------------------*/
+header {
+    background-color:var(--app-header-bg);
+    display: flex;
+    height: 60px;
+    overflow: hidden;
+}
+
+header div {
+    width: 40%;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 0px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    color: var(--app-white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--app-white);
+    background-color: var(--app-turquoise);
+
+}
+
+nav ul li + li {
+    margin-left: 0px;
+}
+
+.logo {
+    color: var(--app-white);
+    line-height: 60px;
+}
