@@ -9,20 +9,6 @@
     --app-gray-text: #303030;   
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border-style: none;
-    vertical-align: baseline;
-    font-family:inherit;
-    box-sizing: border-box;
-}
-
-html {
-    min-width: 100%;
-}
-
 body {
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
     font-weight: 400;
