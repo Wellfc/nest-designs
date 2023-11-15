@@ -24,16 +24,18 @@
 </head>
 
 <body>
+
     <!-- Header-->
     <header>
-        <div class="container flexbox">
+        <div class="hamburger-icon" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></div>
+        <div class="container flexbox" id="navbar">
             <div class="logo">
                 <h2 class="logotype"><a href="./index.html">NEST DESIGN</a></h2>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
             </nav>
@@ -47,29 +49,28 @@
     </header>
     <main>
         <!-- Hero-->
-        <div class="hero">
+        <div class="hero-details">
             <figure class="hero-background"></figure>
             <div class="overlay"></div>
             <div class="content-hero">
-                <h2>Welcome to Nest Design</h2>
-                <h1>We Design Your Dreams</h1>
+                <h1>Buy Our Services!</h1>
                 <div class="btn btn-1">
-                    <a href="#services"><i class="fa-solid fa-circle-arrow-down"></i> KNOW MORE</a>
+                    <a href="#interior-services"><i class="fa-solid fa-circle-arrow-down"></i> HERE</a>
                 </div>
             </div>
         </div>
         <section>
-            <div class="white-background" id="services">
+            <div class="white-background" id="interior-services">
                 <div class="container">
-                    <div class="featured-container">
-                        <div class="featured-column">
-                            <a href="./detail.html">
+                    <div class="subscriptions">
+                        <div class="subscription-column">
                                 <div class="featured-img img1"></div>
                                 <div class="featured-text">
-                                    <h2>Enhance Your Space with Our Interior Design Services</h2>
+                                    <div class="subscription-heading">
+                                        <div>Enhance Your Space with Our Interior Design Services</div>
+                                    </div>
                                     <p>Transform your home or office into a personalized sanctuary with our expert interior design solutions.</p>
                                 </div>
-                            </a>
                         </div>
                         <!-- Subscriptions container -->
                         <div class="subscriptions">
