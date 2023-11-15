@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/*-------------COLOR PALLET------------------*/
+:root {
+    --app-white: #fff;
+    --app-light-gray: #e2e2e2;
+    --app-medium-gray: #8f8f8f;
+    --app-gray: #303030;
+    --app-dark-gray: #151515;
+    --app-orange: #e1a450;
+    --app-organge-hover: #b07524;
+    --app-teal: #6ca6a0;
+    --app-sage-green: #6e9a89;
+    --app-pale-green: #b4c0a1;
+    --app-peach: #e59c77;
+    --pastel-pink: #edbfb8;
+}
+
+/*------------------HEADER-------------------*/
+header {
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.6);
+    display: flex;
+    height: 60px;
+    overflow: hidden;
+    line-height: 60px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 30%;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 0px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 25px 0 0;
+    color: var(--app-white);
+    text-decoration: none;
+    font-size: 16px;
+    position: relative; 
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--app-orange);
+    transition: width 0.3s ease-in-out;
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover::before {
+    width: calc(100% - 25px);
+}
+
+nav ul li a:hover {
+    color: var(--app-orange);
+}
+
+nav ul li + li {
+    margin-left: 0px;
+}
+
+.logotype {
+    color: var(--app-white);
+}
+
+.cart a {
+    font-size: 18px;
+    padding: 0 0 0 15px;
+    color: var(--app-orange);
+    margin-left: 5px;
+    transition: color 0.2s ease-in-out;
+}
+
+.cart a:hover {
+    font-size: 18px;
+    padding: 0 0 0 15px;
+    color: var(--app-organge-hover);
+    margin-left: 5px;
+}
+
+/*----------------BUTTONS-------------------*/
+.btn-1 {
+    flex-shrink: 0;
+}
+
+.btn-1 p {
+    margin: 0;
+}
+
+.btn-1 a {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    background-color: var(--app-orange);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--app-white);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-1 a:hover {
+    background-color: var(--app-organge-hover) ;
+}
+
+body {
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    background-color: var(--app-white);
+    overflow: auto;
+    line-height: 1.5;
+}
+
+main {
+    overflow: hidden;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flexbox {
+    display: flex;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 400;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--app-gray);
+    letter-spacing: 0.4px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--app-gray);
+}
+
+a {
+    color: var(--app-gray);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
