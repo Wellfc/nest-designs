@@ -79,7 +79,7 @@ nav ul li + li {
     margin-left: 0px;
 }
 
-.logotype {
+h2 > a {
     color: var(--app-white);
 }
 
@@ -183,4 +183,25 @@ a {
 
 .bold {
     font-weight: 700;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e1a450;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c48e43;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
 }
