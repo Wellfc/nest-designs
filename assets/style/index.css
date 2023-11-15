@@ -11,6 +11,15 @@
     margin-bottom: 60px;
 }
 
+.hero-details {
+    position: relative;
+    width: 100%;
+    height: calc(50vh);
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+
 .hero-background {
     position: absolute;
     top: 0;
@@ -66,6 +75,15 @@
 }
 
 /*-------------FEATURED SECTION---------------*/
+.services-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-heading p {
+    font-size: 25px;
+}
+
 .featured-text {
     margin: 0;
     padding: 10px;
@@ -131,7 +149,7 @@
 }
 
 .featured-column:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
