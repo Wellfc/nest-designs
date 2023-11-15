@@ -1,2 +1,286 @@
 @import "./reset.css";
 @import "./global.css";
+
+
+/*------------------------------------------------*/
+/*-----------------Footer-------------------------*/
+/*------------------------------------------------*/
+
+.container-footer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    /*Aling items to top to botton*/
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/interior-decoration.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 10px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: left;
+    /*Aling items to top to botton*/
+    align-items: start;
+    height: 250px;
+    border-color: beige;
+    border-style: dotted;
+    margin: 10px 10px;
+}
+
+.column-footer {
+    margin: 10px 10px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: flex;
+}
+
+.our-service ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+.quick-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.our-service a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.our-service a:hover {
+    border-bottom: 2px solid violet;
+}
+
+.quick-links a:hover {
+    border-bottom: 2px solid violet;
+}
+
+.column-footer p {
+    color: white;
+}
+
+a {
+    margin-bottom: 20px;
+}
+
+.column-footer p a {
+    color: white;
+    margin-bottom: 20px;
+}
+
+p a:hover {
+    border-bottom: 2px solid violet;
+}
+
+h2 span {
+    margin-bottom: 20px;
+    color: violet;
+}
+
+.icons li .social {
+    margin-right: 20px;
+}
+
+.social {
+    background-color: violet;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.social:hover {
+    background-color: transparent;
+    border-color: violet;
+}
+
+/*---------------------------------------------------------------------*/
+/*-----------------------Form -----------------------------------------*/
+/*---------------------------------------------------------------------*/
+.new-letters {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"] {
+    width: 90%;
+    height: 40px;
+    font-weight: 600;
+    margin: 18px 18px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid violet;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input[type="email"]::placeholder {
+    color: white;
+}
+
+.submit-button {
+    width: 90%;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    color: var(--app-white);
+    font-weight: 600;
+    background-color: violet;
+    border-color: violet;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+input[type="email"]:hover {
+    border-color: violet;
+    background-color: transparent;
+}
+
+.submit-button:hover {
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.error-message {
+    color: #ff0000;
+    display: none;
+    /* Initially, error messages are hidden */
+    margin-left: 25px;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: 85%;
+    position: absolute;
+    /* Add space above the error message */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+    .footer-item {
+        /* Show 4 columns */
+        flex-basis: 25%;
+
+    }
+
+    body {
+        background-color: orange;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-item {
+        /* Show 3 columns */
+        flex-basis: 33.33%;
+    }
+
+    body {
+        background-color: blueviolet;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-item {
+        flex-basis: 50%;
+        /* Show 2 columns */
+    }
+
+    .column-footer {
+        margin: 10px;
+        /* Adjust spacing */
+    }
+
+    .icons ul,
+    .our-service ul,
+    .quick-links ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons li,
+    .our-service li,
+    .quick-links li {
+        margin: 0 10px;
+        /* Adjust spacing between items */
+    }
+
+    .our-service a,
+    .quick-links a {
+        margin-top: 0;
+        /* Remove top margin */
+    }
+
+    body {
+        background-color: blue;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        flex: 100%;
+        /* Show 1 column, full width */
+    }
+
+    .icons ul,
+    .our-service ul,
+    .quick-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons li,
+    .our-service li,
+    .quick-links li {
+        margin: 10px 0;
+        /* Adjust spacing between items */
+    }
+
+    body {
+        background-color: red;
+    }
+
+}
