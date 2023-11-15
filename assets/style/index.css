@@ -131,19 +131,22 @@
 /*-----------------Footer-------------------------*/
 /*------------------------------------------------*/
 
-.container-footer {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    /*Aling items to top to botton*/
-    align-items: center;
-    justify-content: center;
+footer {
     background-image: url('../img/interior-decoration.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-footer {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    /*Aling items to top to botton*/
+    align-items: start;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -151,16 +154,13 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    width: fit-content;
     justify-content: left;
-    /*Aling items to top to botton*/
-    align-items: start;
-    height: 250px;
-    border-color: beige;
-    border-style: dotted;
     margin: 10px 10px;
 }
 
 .column-footer {
+
     margin: 10px 10px;
 }
 
@@ -177,60 +177,52 @@
 
 .our-service ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: left;
 }
 
-
 .quick-links ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: left;
 }
 
 .our-service a {
-    margin-top: 20px;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: var(--app-white);
+    font-size: 16px;
 }
 
 .quick-links a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-.our-service a:hover {
-    border-bottom: 2px solid violet;
-}
-
-.quick-links a:hover {
-    border-bottom: 2px solid violet;
+    color: var(--app-white);
+    font-size: 16px;
 }
 
 .column-footer p {
-    color: white;
+    color: var(--app-white);
+    margin-bottom: 5px;
 }
 
-a {
-    margin-bottom: 20px;
-}
-
+/*
 .column-footer p a {
-    color: white;
+    color: var(--app-white);
     margin-bottom: 20px;
 }
+*/
 
-p a:hover {
-    border-bottom: 2px solid violet;
+.contact {
+    color: var(--app-white);
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+
+.contact:hover {
+    border-bottom: var(--app-organge-hover);
+}
+
 
 h2 span {
     margin-bottom: 20px;
-    color: violet;
+    color: var(--app-orange);
+    font-weight: bold;
 }
 
 .icons li .social {
@@ -238,17 +230,25 @@ h2 span {
 }
 
 .social {
-    background-color: violet;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 2px solid white;
+    display: inline-block;
+    width: 40px;
+    /* Adjust the size of the circle */
+    height: 40px;
+    /* Adjust the size of the circle */
+    line-height: 40px;
+    padding: .50px;
     border-radius: 50%;
-    transition: background-color 0.3s, border-color 0.3s;
+    background-color: var(--app-orange);
+    justify-content: center;
+    text-align: center;
+    /* Center the icon vertically */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
+
 .social:hover {
-    background-color: transparent;
-    border-color: violet;
+    background-color: var(--app-organge-hover);
+    text-decoration: none;
 }
 
 /*---------------------------------------------------------------------*/
@@ -262,13 +262,13 @@ h2 span {
 
 input[type="email"] {
     width: 90%;
+    margin-top: 20px;
     height: 40px;
     font-weight: 600;
-    margin: 18px 18px;
     padding: 10px 10px;
     font-size: 16px;
     color: white;
-    border: 1px solid violet;
+    border: 1px solid var(--app-orange);
     border-radius: 5px;
     background-color: transparent;
 }
@@ -279,13 +279,12 @@ input[type="email"]::placeholder {
 
 .submit-button {
     width: 90%;
+    margin-top: 20px;
     text-align: center;
-    margin: 20px 20px;
     padding: 10px 10px;
     color: var(--app-white);
     font-weight: 600;
-    background-color: violet;
-    border-color: violet;
+    background-color: var(--app-orange);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 16px;
@@ -294,13 +293,12 @@ input[type="email"]::placeholder {
 }
 
 input[type="email"]:hover {
-    border-color: violet;
-    background-color: transparent;
+    border: 1px solid var(--app-organge-hover);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .submit-button:hover {
-    background-color: blueviolet;
-    border: 1px solid blueviolet;
+    background-color: var(--app-organge-hover);
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -322,7 +320,6 @@ input[type="email"]:hover {
     .footer-item {
         /* Show 4 columns */
         flex-basis: 25%;
-
     }
 
     body {
