@@ -29,7 +29,39 @@
     overflow: hidden;
 }
 
+.login__container.active-popup {
+    transform: scale(1);
+}
 
+.login__container .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.login__container.active {
+    height: 520px;
+}
+
+.login__container .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.login__container.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.login__container .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.login__container.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
 
 .login__container .icon-close {
     position: absolute;
@@ -133,4 +165,26 @@
     font-size: 1rem;
     color: #fff;
     font-weight: 500;
+}
+
+.btn:active {
+    transform: translateY(0.125rem);
+}
+
+.login-register {
+    font-size: 0.9rem;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
 }
