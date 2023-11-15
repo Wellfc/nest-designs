@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./global.css";
 
+
 /*------------------HERO--------------------*/
 .hero {
     position: relative;
@@ -35,7 +36,8 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 1% 1%, transparent 1%, rgba(0, 0, 0, 0.6) 5%);
-    background-size: 10px 10px; /* Ajuste o tamanho dos dots conforme necessário */
+    background-size: 10px 10px;
+    /* Ajuste o tamanho dos dots conforme necessário */
     pointer-events: none;
 }
 
@@ -157,5 +159,284 @@
     .featured-column {
         flex: 0 0 100%; 
         margin-bottom: 20px;
+    }
+}
+
+/*------------------------------------------------*/
+/*-----------------Footer-------------------------*/
+/*------------------------------------------------*/
+
+footer {
+    background-image: url('../img/interior-decoration.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-footer {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    /*Aling items to top to botton*/
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: fit-content;
+    justify-content: left;
+    margin: 10px 10px;
+}
+
+.column-footer {
+
+    margin: 10px 10px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: flex;
+}
+
+.our-service ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.our-service a {
+    text-decoration: none;
+    color: var(--app-white);
+    font-size: 16px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: var(--app-white);
+    font-size: 16px;
+}
+
+.column-footer p {
+    color: var(--app-white);
+    margin-bottom: 5px;
+}
+
+/*
+.column-footer p a {
+    color: var(--app-white);
+    margin-bottom: 20px;
+}
+*/
+
+.contact {
+    color: var(--app-white);
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.contact:hover {
+    border-bottom: var(--app-organge-hover);
+}
+
+
+h2 span {
+    margin-bottom: 20px;
+    color: var(--app-orange);
+    font-weight: bold;
+}
+
+.icons li .social {
+    margin-right: 20px;
+}
+
+.social {
+    display: inline-block;
+    width: 40px;
+    /* Adjust the size of the circle */
+    height: 40px;
+    /* Adjust the size of the circle */
+    line-height: 40px;
+    padding: .50px;
+    border-radius: 50%;
+    background-color: var(--app-orange);
+    justify-content: center;
+    text-align: center;
+    /* Center the icon vertically */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+
+.social:hover {
+    background-color: var(--app-organge-hover);
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------*/
+/*-----------------------Form -----------------------------------------*/
+/*---------------------------------------------------------------------*/
+.new-letters {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"] {
+    width: 90%;
+    margin-top: 20px;
+    height: 40px;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid var(--app-orange);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input[type="email"]::placeholder {
+    color: white;
+}
+
+.submit-button {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    color: var(--app-white);
+    font-weight: 600;
+    background-color: var(--app-orange);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+input[type="email"]:hover {
+    border: 1px solid var(--app-organge-hover);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: var(--app-organge-hover);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.error-message {
+    color: #ff0000;
+    display: none;
+    /* Initially, error messages are hidden */
+    margin-left: 25px;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: 85%;
+    position: absolute;
+    /* Add space above the error message */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+    .footer-item {
+        /* Show 4 columns */
+        flex-basis: 25%;
+    }
+
+    body {
+        background-color: orange;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-item {
+        /* Show 3 columns */
+        flex-basis: 33.33%;
+    }
+
+    body {
+        background-color: blueviolet;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-item {
+        flex-basis: 50%;
+        /* Show 2 columns */
+    }
+
+    .column-footer {
+        margin: 10px;
+        /* Adjust spacing */
+    }
+
+    .icons ul,
+    .our-service ul,
+    .quick-links ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons li,
+    .our-service li,
+    .quick-links li {
+        margin: 0 10px;
+        /* Adjust spacing between items */
+    }
+
+    .our-service a,
+    .quick-links a {
+        margin-top: 0;
+        /* Remove top margin */
+    }
+
+    body {
+        background-color: blue;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        flex: 100%;
+        /* Show 1 column, full width */
+    }
+
+    .icons ul,
+    .our-service ul,
+    .quick-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons li,
+    .our-service li,
+    .quick-links li {
+        margin: 10px 0;
+        /* Adjust spacing between items */
+    }
+
+    body {
+        background-color: red;
     }
 }
