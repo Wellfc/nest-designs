@@ -1,2 +1,125 @@
 @import "./reset.css";
 @import "./global.css";
+
+/*------------------HERO--------------------*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh);
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/75068ezz.png') center/cover no-repeat;
+    background-color: black;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 1% 1%, transparent 1%, rgba(0, 0, 0, 0.6) 5%);
+    background-size: 10px 10px; /* Ajuste o tamanho dos dots conforme necessário */
+    pointer-events: none;
+}
+
+.content-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-hero h1 {
+    font-weight: 700;
+    color: var(--app-white);
+    font-size: 55px;
+    line-height: 1.2;
+    padding: 5px 0 30px 0;
+}
+
+.content-hero h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+}
+
+/*-------------FEATURED SECTION---------------*/
+.featured-text {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+.featured-text h2 {
+    color: var(--app-dark-gray);
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.featured-text p {
+    color: var(--app-dark-gray);
+    line-height: 1.5;
+}
+
+.img1 {
+    background: url('../img/color-patterns-1984238_1280.jpg') center/cover no-repeat;
+}
+
+.img2 {
+    background: url('../img/floor-plan-1857175_1280.jpg') center/cover no-repeat;
+}
+
+.img3 {
+    background: url('../img/pexels-tima-miroshnichenko-6474471.jpg') center/cover no-repeat;
+}
+
+.img4 {
+    background: url('../img/wooden-3346929_1920.jpg') center/cover no-repeat;
+}
+
+
+
+.featured-img{
+    background-color: black;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    outline: 1px solid var(--app-white);
+}
+
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-column {
+    transition: transform 0.3s ease;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.featured-column:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
