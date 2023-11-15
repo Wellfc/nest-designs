@@ -1,0 +1,85 @@
+@import "./reset.css";
+@import "./global.css";
+
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-column {
+    transition: none;
+    transform: none;
+}
+
+.featured-column:hover {
+    transform: none;
+}
+
+.featured-column {
+    width: 48%;
+}
+
+.featured-text {
+    padding: 20px;
+}
+
+.subscriptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 50px;
+    width: 80%;
+}
+
+.subscription-column {
+    margin-right: 20px;
+}
+
+.subscription-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-item h4 {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.subscription-item:hover {
+    background-color: #f1f1f1;
+}
+
+.subscription-column h3 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Select button */
+.select-button {
+    display: none;
+    background-color: var(--app-orange);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+    background-color: var(--app-organge-hover);
+}
+
+.subscription-item:hover .select-button {
+    display: block;
+    position: static;
+    margin-top: 10px;
+    transform: scale(1.1);
+}
