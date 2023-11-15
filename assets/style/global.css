@@ -19,8 +19,7 @@
 /*------------------HEADER-------------------*/
 header {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0 auto auto 0;
     width: 100%;
     background-color: rgba(20, 20, 20, 0.6);
     display: flex;
