@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.5);
+    background-color: rgba(20, 20, 20, 0.6);
     display: flex;
     height: 60px;
     overflow: hidden;
@@ -54,7 +54,22 @@ nav ul li a {
     color: var(--app-white);
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.25s ease-in-out;
+    position: relative; 
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--app-orange);
+    transition: width 0.3s ease-in-out;
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover::before {
+    width: calc(100% - 25px);
 }
 
 nav ul li a:hover {
