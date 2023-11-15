@@ -75,11 +75,13 @@
     color: var(--app-dark-gray);
     font-weight: 600;
     line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 .featured-text p {
     color: var(--app-dark-gray);
     line-height: 1.5;
+    text-align: center;
 }
 
 .img1 {
@@ -98,28 +100,62 @@
     background: url('../img/wooden-3346929_1920.jpg') center/cover no-repeat;
 }
 
-
-
-.featured-img{
+.featured-img {
     background-color: black;
     width: 220px;
     height: 220px;
     border-radius: 50%;
     outline: 1px solid var(--app-white);
+    margin-bottom: 10px;
+
 }
 
 .featured-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .featured-column {
+    
     transition: transform 0.3s ease;
     transform: scaleY(1);
     transform-origin: top;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 45px;
 }
 
 .featured-column:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/*-----FEATURED SECTION RESPONSIVENESS-------*/
+
+@media screen and (min-width: 1000px) { /* 4 columns */
+    .featured-column {
+        flex: 0 0 calc(25% - 20px); 
+    }
+}
+
+@media screen and (max-width: 1000px) { /* 2 columns */
+    .featured-column {
+        flex: 0 0 calc(50% - 20px); 
+        margin-bottom: 20px; 
+    }
+}
+
+@media screen and (max-width: 500px) { /* 1 column */
+    .featured-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .featured-column {
+        flex: 0 0 100%; 
+        margin-bottom: 20px;
+    }
 }
