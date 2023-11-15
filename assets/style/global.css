@@ -1,12 +1,133 @@
 @charset "utf-8";
 
-
 /*-------------COLOR PALLET------------------*/
 :root {
     --app-white: #fff;
     --app-light-gray: #e2e2e2;
     --app-medium-gray: #8f8f8f;
-    --app-gray-text: #303030;   
+    --app-gray: #303030;
+    --app-dark-gray: #151515;
+    --app-orange: #e1a450;
+    --app-teal: #6ca6a0;
+    --app-sage-green: #6e9a89;
+    --app-pale-green: #b4c0a1;
+    --app-peach: #e59c77;
+    --pastel-pink: #edbfb8;
+}
+
+/*------------------HEADER-------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.6);
+    display: flex;
+    height: 60px;
+    overflow: hidden;
+    line-height: 60px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 30%;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 0px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    color: var(--app-white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--app-orange);
+}
+
+nav ul li + li {
+    margin-left: 0px;
+}
+
+.logotype {
+    color: var(--app-white);
+}
+
+.cart a {
+    font-size: 18px;
+    color: var(--app-orange);
+    margin-left: 5px;
+}
+
+
+/*----------------BUTTONS-------------------*/
+
+.btn p {
+    margin: 0;
+}
+
+.btn-1 {
+    flex-shrink: 0;
+}
+
+.btn-1 a {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    background-color: var(--app-orange);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--app-white);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-1 a:hover {
+    background-color: var(--app-light-turquoise);
+}
+
+.btn-2 a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    background-color: var(--app-medium-gray);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--app-white);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-2 a:hover {
+    background-color: var(--app-dark-gray);
+}
+
+.btn-side-by-side {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
 }
 
 body {
@@ -28,7 +149,7 @@ main {
 }
 
 .flexbox {
-    display:flex;
+    display: flex;
 }
  
 h1 {
@@ -49,18 +170,18 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 400;
-    color: var(--app-gray-text);
+    color: var(--app-gray);
     letter-spacing: 0.4px;
 }
 
 p {
     font-size:16px;
     font-weight: 500;
-    color: var(--app-gray-text);
+    color: var(--app-gray);
 }
 
 a {
-    color: var(--app-gray-text);
+    color: var(--app-gray);
     text-decoration: none;
     font-weight: 500;
 }
