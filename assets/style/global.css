@@ -205,3 +205,54 @@ a {
 ::-webkit-scrollbar-button {
     display: none;
 }
+
+
+.hamburger-icon {
+    display: none; 
+    cursor: pointer;
+    color: var(--app-white);
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block; 
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.6);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: var(--app-white);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
