@@ -1,7 +1,6 @@
 @import "./reset.css";
 @import "./global.css";
 
-
 /*------------------HERO--------------------*/
 .hero {
     position: relative;
@@ -155,9 +154,11 @@
     /*Aling items to top to botton*/
     align-items: start;
     height: 250px;
+    margin: 10px 10px;
+    /*Detele after*/
     border-color: beige;
     border-style: dotted;
-    margin: 10px 10px;
+
 }
 
 .column-footer {
@@ -193,26 +194,26 @@
 .our-service a {
     margin-top: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--app-white);
     font-size: 18px;
 }
 
 .quick-links a {
     text-decoration: none;
-    color: white;
+    color: var(--app-white);
     font-size: 18px;
 }
 
 .our-service a:hover {
-    border-bottom: 2px solid violet;
+    border-bottom: 2px solid var(--app-organge-hover);
 }
 
 .quick-links a:hover {
-    border-bottom: 2px solid violet;
+    border-bottom: 2px solid var(--app-organge-hover);
 }
 
 .column-footer p {
-    color: white;
+    color: var(--app-white);
 }
 
 a {
@@ -220,17 +221,17 @@ a {
 }
 
 .column-footer p a {
-    color: white;
+    color: var(--app-white);
     margin-bottom: 20px;
 }
 
 p a:hover {
-    border-bottom: 2px solid violet;
+    border-bottom: 2px solid var(--app-organge-hover);
 }
 
 h2 span {
     margin-bottom: 20px;
-    color: violet;
+    color: var(--app-organge-hover);
 }
 
 .icons li .social {
@@ -238,17 +239,17 @@ h2 span {
 }
 
 .social {
-    background-color: violet;
+    background-color: var(--app-organge-hover);
     margin-bottom: 20px;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid var(--app-organge-hover);
     border-radius: 50%;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .social:hover {
     background-color: transparent;
-    border-color: violet;
+    border-color: var(--app-organge-hover);
 }
 
 /*---------------------------------------------------------------------*/
@@ -267,14 +268,14 @@ input[type="email"] {
     margin: 18px 18px;
     padding: 10px 10px;
     font-size: 16px;
-    color: white;
-    border: 1px solid violet;
+    color: var(--app-white);
+    border: 1px solid var(--app-organge-hover);
     border-radius: 5px;
     background-color: transparent;
 }
 
 input[type="email"]::placeholder {
-    color: white;
+    color: var(--app-white);
 }
 
 .submit-button {
@@ -284,8 +285,10 @@ input[type="email"]::placeholder {
     padding: 10px 10px;
     color: var(--app-white);
     font-weight: 600;
-    background-color: violet;
-    border-color: violet;
+    background-color: var(--app-orange);
+    border-radius: 5px;
+    border-color: var(--app-orange);
+    border-radius: 5px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 16px;
@@ -294,13 +297,16 @@ input[type="email"]::placeholder {
 }
 
 input[type="email"]:hover {
-    border-color: violet;
+    border-color: var(--app-organge-hover);
+    border-radius: 5px;
     background-color: transparent;
 }
 
 .submit-button:hover {
-    background-color: blueviolet;
-    border: 1px solid blueviolet;
+    background-color: var(--app-organge-hover);
+    border-radius: 5px;
+    border: 1px solid var(--app-organge-hover);
+    border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
 }
 
