@@ -1,10 +1,7 @@
 @import "./reset.css";
 @import "./global.css";
 
-
-
 /*------------------HERO--------------------*/
-
 .hero {
     position: relative;
     width: 100%;
@@ -54,7 +51,7 @@
     color: var(--app-white);
     font-size: 55px;
     line-height: 1.2;
-    padding: 25px;
+    padding: 5px 0 30px 0;
 }
 
 .content-hero h2 {

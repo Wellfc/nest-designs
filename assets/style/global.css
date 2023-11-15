@@ -8,6 +8,7 @@
     --app-gray: #303030;
     --app-dark-gray: #151515;
     --app-orange: #e1a450;
+    --app-organge-hover: #b07524;
     --app-teal: #6ca6a0;
     --app-sage-green: #6e9a89;
     --app-pale-green: #b4c0a1;
@@ -21,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.6);
+    background-color: rgba(20, 20, 20, 0.5);
     display: flex;
     height: 60px;
     overflow: hidden;
@@ -49,7 +50,7 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 25px 0 0;
     color: var(--app-white);
     text-decoration: none;
     font-size: 16px;
@@ -70,24 +71,30 @@ nav ul li + li {
 
 .cart a {
     font-size: 18px;
+    padding: 0 0 0 15px;
     color: var(--app-orange);
+    margin-left: 5px;
+    transition: color 0.2s ease-in-out;
+}
+
+.cart a:hover {
+    font-size: 18px;
+    padding: 0 0 0 15px;
+    color: var(--app-organge-hover);
     margin-left: 5px;
 }
 
-
 /*----------------BUTTONS-------------------*/
-
-.btn p {
-    margin: 0;
-}
-
 .btn-1 {
     flex-shrink: 0;
 }
 
+.btn-1 p {
+    margin: 0;
+}
+
 .btn-1 a {
     display: inline;
-    margin-right: 10px;
     padding: 10px 10px 10px 10px;
     align-items: center;
     background-color: var(--app-orange);
@@ -101,33 +108,7 @@ nav ul li + li {
 }
 
 .btn-1 a:hover {
-    background-color: var(--app-light-turquoise);
-}
-
-.btn-2 a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 10px 10px 10px;
-    align-items: center;
-    background-color: var(--app-medium-gray);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--app-white);
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.btn-2 a:hover {
-    background-color: var(--app-dark-gray);
-}
-
-.btn-side-by-side {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 5px;
+    background-color: var(--app-organge-hover) ;
 }
 
 body {
