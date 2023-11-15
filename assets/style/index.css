@@ -356,10 +356,6 @@ input[type="email"]:hover {
         /* Show 4 columns */
         flex-basis: 25%;
     }
-
-    body {
-        background-color: orange;
-    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -367,11 +363,6 @@ input[type="email"]:hover {
         /* Show 3 columns */
         flex-basis: 33.33%;
     }
-
-    body {
-        background-color: blueviolet;
-    }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -406,10 +397,6 @@ input[type="email"]:hover {
         /* Remove top margin */
     }
 
-    body {
-        background-color: blue;
-    }
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -434,9 +421,5 @@ input[type="email"]:hover {
     .quick-links li {
         margin: 10px 0;
         /* Adjust spacing between items */
-    }
-
-    body {
-        background-color: red;
     }
 }
