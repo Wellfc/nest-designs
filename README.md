@@ -1,4 +1,4 @@
-# nest-designs
+# Nest Designs
 Company that offers interior design services
 
 ### Demo
