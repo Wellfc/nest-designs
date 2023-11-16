@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Nest Designs Team">
-    <meta name="description" content="Nest Designs company website">
-    <meta name="keywords" content="Nest Designs, Interior Designs, HTML, CSS, JavaScript">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nest Designs Team">
+        <meta name="description" content="Nest Designs company website">
+        <meta name="keywords" content="Nest Designs, Interior Designs, HTML, CSS, JavaScript">
 
         <!-- Stylesheets -->
         <link rel="shortcut icon" href="./assets/img/favicon.png?=2" type="image/x-icon">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </header>
-    <main>
+        <main>
             <!-- Hero-->
             <div class="hero-detail">
                 <figure class="hero-background-detail"></figure>
@@ -52,7 +52,7 @@
             </div>
              
               <!-- Detail-->
-              <div class="container">
+            <div class="container">
                 <section>
                     <div class="container-detail">
                         <div class="detail-column detail-image">
@@ -89,74 +89,153 @@
                         
                         </div>
                     </div>
-            </section>
+                </section>
 
-              </div>
+            </div>
               
+            <!-- LOGIN-MODAL -->
+            <div class="modal">
+                <div class="login__container">
+                    <span class="icon-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">
+                                Remember me</label>
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="modal-button">Login</button>
+                            <div class="login-register">
+                                <p>
+                                    Don't have an account?
+                                    <a href="#" class="register-link">
+                                        Register
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
 
-    </main>
-
-    <!------------------------------------------------------->
-    <!-----------------------Footer ------------------------->
-    <!------------------------------------------------------->
-    <footer>
-        <div class="container-footer flexblox">
-            <div class="footer-item">
-                <div class="column-footer">
-                    <h2 class="subtitle-footer"><span>Nest Desings</span></h2>
-                    <p> Connect us to start the journey!</p>
-                    <p>Telephone: <a class="contact-footer" href="tel:+1234567890">+1 (431) 123-4567</a></p>
-                    <p>Email: <a class="contact-footer"
-                            href="mailto:contacus@nestdesigns.com">contacus@nestdesigns.com</a></p>
-                    <nav class="icons">
-                        <ul>
-                            <li>
-                                <a class="social" href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a class="social" href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a class="social" href="#facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a class="social" href="#likeding"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="column-footer">
-                    <h2 class="subtitle-footer"><span>Our Services</span></h2>
-                    <nav class="our-service">
-                        <ul>
-                            <li><a href="#">Interior Design</a></li>
-                            <li><a href="#">Architecture Planning</a></li>
-                            <li><a href="#">Renovation Services</a></li>
-                            <li><a href="#">Landscape Design</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="column-footer">
-                    <h2 class="subtitle-footer"><span>Newsletters</span></h2>
-                    <p>Subscribe now and let get the magic of interior design!</p>
-                    <form class="new-letters">
-                        <input type="email" id="email" name="email" placeholder="Your Email Address" maxlength="50"
-                            required>
-                        <small id="email-error" class="error-message"></small>
+                    <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">
+                            I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="modal-button">Register</button>
+                        <div class="login-register">
+                            <p>
+                                Already have an account?
+                                <a href="#" class="login-link">
+                                    Login
+                                </a>
+                            </p>
+                        </div>
                     </form>
-                    <button type="submit" class="submit-button">Submit</button>
                 </div>
             </div>
-        </div>
-    </footer>
+        </main>
+
+        <!------------------------------------------------------->
+        <!-----------------------Footer ------------------------->
+        <!------------------------------------------------------->
+        <footer>
+            <div class="container-footer flexblox">
+                <div class="footer-item">
+                    <div class="column-footer">
+                        <h2 class="subtitle-footer"><span>Nest Desings</span></h2>
+                        <p> Connect us to start the journey!</p>
+                        <p>Telephone: <a class="contact-footer" href="tel:+1234567890">+1 (431) 123-4567</a></p>
+                        <p>Email: <a class="contact-footer"
+                                href="mailto:contacus@nestdesigns.com">contacus@nestdesigns.com</a></p>
+                        <nav class="icons">
+                            <ul>
+                                <li>
+                                    <a class="social" href="#twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="social" href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="social" href="#facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="social" href="#likeding"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="column-footer">
+                        <h2 class="subtitle-footer"><span>Our Services</span></h2>
+                        <nav class="our-service">
+                            <ul>
+                                <li><a href="#">Interior Design</a></li>
+                                <li><a href="#">Architecture Planning</a></li>
+                                <li><a href="#">Renovation Services</a></li>
+                                <li><a href="#">Landscape Design</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="column-footer">
+                        <h2 class="subtitle-footer"><span>Newsletters</span></h2>
+                        <p>Subscribe now and let get the magic of interior design!</p>
+                        <form class="new-letters">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" maxlength="50"
+                                required>
+                            <small id="email-error" class="error-message"></small>
+                        </form>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-    <noscript>
-        <p>This page requires a JavaScript-enabled browser</p>
-    </noscript>
-</body>
+        <noscript>
+            <p>This page requires a JavaScript-enabled browser</p>
+        </noscript>
+    </body>
 </html>
