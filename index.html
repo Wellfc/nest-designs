@@ -9,18 +9,18 @@
     <meta name="description" content="Nest Designs company website">
     <meta name="keywords" content="Nest Designs, Interior Designs, HTML, CSS, JavaScript">
 
-        <!-- Stylesheets -->
-        <link rel="shortcut icon" href="./assets/img/favicon.png?=2" type="image/x-icon">
-        <link rel="stylesheet" href="./assets/style/index.css" media="all">
-        <link rel="stylesheet" href="./assets/style/reset.css" media="all">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <script src="./assets/script/index.js" defer></script>
-    </head>
-    <body>
-        <!-- Header-->
+    <!-- Stylesheets -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png?=2" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <link rel="stylesheet" href="./assets/style/reset.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./assets/script/index.js" defer></script>
+</head>
+<body>
+    <!-- Header-->
     <header>
         <div class="container flexbox">
             <div class="logo">
@@ -41,59 +41,138 @@
         </div>
     </header>
     <main>
-            <!-- Hero-->
-            <div class="hero">
-                <figure class="hero-background"></figure>
-                <div class="overlay"></div>
-                <div class="content-hero">
-                    <h2>Welcome to Nest Design</h2>
-                    <h1>We Design Your Dreams</h1>
-                    <div class="btn btn-1">
-                        <a href="#services"><i class="fa-solid fa-circle-arrow-down"></i> KNOW MORE</a>
-                    </div>
+        <!-- Hero-->
+        <div class="hero">
+            <figure class="hero-background"></figure>
+            <div class="overlay"></div>
+            <div class="content-hero">
+                <h2>Welcome to Nest Design</h2>
+                <h1>We Design Your Dreams</h1>
+                <div class="btn btn-1">
+                    <a href="#services"><i class="fa-solid fa-circle-arrow-down"></i> KNOW MORE</a>
                 </div>
             </div>
-             <!-- About-->
-              <!-- Featured Services-->
-              <section>
-                <div class="white-background" id="services">
-                    <div class="container">
-                        <div class="featured-container flexbox">
-                            <div class="featured-column">
-                                <div class="featured-img img1"></div>
-                                <div class="featured-text">
-                                    <h2>Interior Design</h2>
-                                    <p>Explore a perfect blend of style and functionality.</p>
-                                </div>
+        </div>
+            <!-- About-->
+            <!-- Featured Services-->
+        <section>
+            <div class="white-background" id="services">
+                <div class="container">
+                    <div class="featured-container flexbox">
+                        <div class="featured-column">
+                            <div class="featured-img img1"></div>
+                            <div class="featured-text">
+                                <h2>Interior Design</h2>
+                                <p>Explore a perfect blend of style and functionality.</p>
                             </div>
-                            <div class="featured-column">
-                                <div class="featured-img img2"></div>
-                                <div class="featured-text">
-                                    <h2>Architecture Planing</h2>
-                                    <p>Crafting visionary living spaces.</p>
-                                </div>
+                        </div>
+                        <div class="featured-column">
+                            <div class="featured-img img2"></div>
+                            <div class="featured-text">
+                                <h2>Architecture Planing</h2>
+                                <p>Crafting visionary living spaces.</p>
                             </div>
-                            <a href="#" class="featured-column">
-                                <div class="featured-img img3"></div>
-                                <div class="featured-text">
-                                    <h2>Renovation Services</h2>
-                                    <p>Revitalize, enhance, and transform your space.</p>
-                                </div>
-                            </a>
-                            <div class="featured-column">
-                                <div class="featured-img img4">
-                                </div>
-                                <div class="featured-text">
-                                    <h2>Landscape Design</h2>
-                                    <p>Transform outdoors with our Landscape Design.</p>
-                                </div>
+                        </div>
+                        <a href="#" class="featured-column">
+                            <div class="featured-img img3"></div>
+                            <div class="featured-text">
+                                <h2>Renovation Services</h2>
+                                <p>Revitalize, enhance, and transform your space.</p>
                             </div>
                         </a>
+                        <div class="featured-column">
+                            <div class="featured-img img4">
+                            </div>
+                            <div class="featured-text">
+                                <h2>Landscape Design</h2>
+                                <p>Transform outdoors with our Landscape Design.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- LOGIN-MODAL -->
+        <div class="modal">
+            <div class="login__container">
+                <span class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">
+                            Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="modal-button">Login</button>
+                        <div class="login-register">
+                            <p>
+                                Don't have an account?
+                                <a href="#" class="register-link">
+                                    Register
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="modal-button">Register</button>
+                    <div class="login-register">
+                        <p>
+                            Already have an account?
+                            <a href="#" class="login-link">
+                                Login
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!------------------------------------------------------->
