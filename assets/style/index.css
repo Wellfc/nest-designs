@@ -430,6 +430,10 @@ input[type="text"]:hover {
     transition: background-color 0.3s ease-in-out;
 }
 
+.submit-button:active {
+    transform: translateY(0.125rem);
+}
+
 .error-message {
     color: #ff0000;
     display: none;
