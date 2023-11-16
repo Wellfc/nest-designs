@@ -210,6 +210,12 @@ a {
     display: none;
 }
 
+/* Scrollbar Style for Firefox */
+* {
+    scrollbar-color: #e1a450 #f1f1f1;
+    scrollbar-width:thin;
+}
+
 
 .hamburger-icon {
     display: none; 
