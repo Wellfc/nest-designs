@@ -125,6 +125,10 @@ h2 > a {
     background-color: var(--app-organge-hover) ;
 }
 
+.btn-1:active {
+    transform: translateY(0.125rem);
+}
+
 body {
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
     font-weight: 400;
