@@ -219,7 +219,7 @@ a {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .hamburger-icon {
         display: block; 
         position: absolute;
