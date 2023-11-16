@@ -47,6 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 
 .content-hero-detail h1 {
@@ -81,7 +82,6 @@
     max-height: 100%;
     overflow: hidden;
     border-radius: 15px;
-    
 }
 
 .detail-image { 

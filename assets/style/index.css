@@ -8,17 +8,7 @@
     width: 100%;
     height: calc(100vh);
     overflow: hidden;
-    
 }
-
-.hero-details {
-    position: relative;
-    width: 100%;
-    height: calc(50vh);
-    overflow: hidden;
-    
-}
-
 
 .hero-background {
     position: absolute;
@@ -55,6 +45,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 
 .content-hero h1 {
@@ -151,6 +142,7 @@
 
     .about-column:nth-child(2) {
         height: 100%; 
+        padding-top: 25px;
     }
 }
 
