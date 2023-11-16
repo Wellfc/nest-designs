@@ -109,6 +109,7 @@
     color: var(--app-dark-gray);
     font-size: 30px;
     font-weight: 500;
+    padding-bottom: 15px;
 }
 
 .container-about h3 {
@@ -265,115 +266,119 @@
 /*-----------------Footer-------------------------*/
 /*------------------------------------------------*/
 
-footer {
-    min-height: 300px;
+.container-footer {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+    margin: auto;
+}
+
+.footer-section {
     background-image: url('../img/interior-decoration.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.7);
-
+    padding: 70px 0;
 }
 
-.container-footer {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
+ul {
+    list-style: none;
+}
+
+.footer-row {
     display: flex;
-    flex-direction: row;
-    /*Aling items to top to botton*/
-    align-items: start;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.footer-item {
-    display: flex;
-    flex-direction: row;
-    flex: 33.33%;
-    height: 100%;
-    align-items: start;
-    justify-content: left;
-    margin: 30px 10px;
+.footer-column {
+    width: 25%;
+    padding: 0 15px;
 }
 
-.column-footer {
-    width: 100%;
-    margin: 10px 10px;
-}
-
-.icons {
-    margin-top: 20px;
-}
-
-.icons ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    display: flex;
-}
-
-.our-service ul li a {
-    width: 100%;
-    margin-bottom: 20px;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: none;
-    text-align: left;
-}
-
-.our-service a {
-    color: var(--app-white);
+.footer-column p {
     font-size: 16px;
-}
-
-.column-footer p {
+    margin-bottom: 15px;
+    font-weight: 400;
     color: var(--app-white);
 }
 
-.contact-footer {
+.footer-column a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
     color: var(--app-white);
-    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.footer-column a:hover {
+    color: var(--app-organge-hover);
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    color: var(--app-white);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-column h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--app-organge-hover);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-column i {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: var(--app-orange);
+    margin-right: 11px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--app-white);
+    transition: all 0.5s ease;
+}
+
+.footer-column ul li:not(:last-clild) {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--app-white);
     text-decoration: none;
-    /* Remove the default underline */
-    transition: background-color 0.3s ease;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
 }
 
-.contact-footer:hover {
+.footer-column ul li a:hover {
     border-bottom: var(--app-organge-hover);
 }
 
-.subtitle-footer {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--app-orange);
-    font-weight: bold;
-    letter-spacing: 0.4px;
-    margin-bottom: 20px;
-}
-
-.icons li .social {
-    margin-right: 20px;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.social {
+.footer-column .icons a i {
     display: inline-block;
-    width: 40px;
-    /* Adjust the size of the circle */
-    height: 40px;
-    /* Adjust the size of the circle */
-    line-height: 40px;
-    padding: .50px;
-    border-radius: 50%;
+    height: 35px;
+    width: 35px;
     background-color: var(--app-orange);
-    justify-content: center;
+    margin: 0 11px 11px 0;
     text-align: center;
-    /* Center the icon vertically */
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--app-white);
+    transition: all 0.5s ease;
 }
 
-.social:hover {
+.footer-column .icons a i:hover {
     background-color: var(--app-organge-hover);
     color: var(--app-white);
 }
@@ -387,30 +392,30 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.column-footer p {
-    margin-bottom: 20px;
+.input-container {
+    width: 100%;
+    position: relative;
 }
 
-input[type="email"] {
+input[type="text"] {
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     height: 40px;
     font-weight: 600;
     padding: 10px 10px;
     font-size: 16px;
-    color: white;
+    color: var(--app-white);
     border: 1px solid var(--app-orange);
     border-radius: 5px;
     background-color: transparent;
 }
 
-input[type="email"]::placeholder {
-    color: white;
+input[type="text"]::placeholder {
+    color: var(--app-white);
 }
 
 .submit-button {
     width: 90%;
-    margin-bottom: 20px;
     text-align: center;
     padding: 10px 10px;
     color: var(--app-white);
@@ -423,7 +428,7 @@ input[type="email"]::placeholder {
     cursor: pointer;
 }
 
-input[type="email"]:hover {
+input[type="text"]:hover {
     border: 1px solid var(--app-organge-hover);
     transition: background-color 0.3s ease-in-out;
 }
@@ -433,93 +438,128 @@ input[type="email"]:hover {
     transition: background-color 0.3s ease-in-out;
 }
 
-.submit-button:active {
-    transform: translateY(0.125rem);
-}
-
 .error-message {
     color: #ff0000;
     display: none;
     /* Initially, error messages are hidden */
-    margin-left: 25px;
+    margin-left: 0px;
     font-size: 12px;
     margin-top: 0px;
     padding-top: 0px;
-    top: 85%;
+    top: 60%;
     position: absolute;
     /* Add space above the error message */
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 1200px) {
-    .footer-item {
-        /* Show 4 columns */
-        flex-basis: 25%;
+/*-----------------------------------------------------*/
+/*--------------- Responsive Footer--------------------*/
+/*-----------------------------------------------------*/
+
+@media screen and (min-width: 320px) {
+    .footer-column {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    .footer-column p {
+        font-size: 14px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    input[type="text"]::placeholder {
+        color: var(--app-white);
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 450px) {
+    .footer-column {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .footer-column p {
+        font-size: 14px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    input[type="text"]::placeholder {
+        color: var(--app-white);
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 725px) {
+    .footer-column {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .footer-section {
+        padding: 30px 0;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    .footer-column {
+        width: 33.33%;
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        padding: 30px 0;
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .footer-item {
-        /* Show 3 columns */
-        flex-basis: 33.33%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .footer-item {
-        flex-basis: 50%;
-        /* Show 2 columns */
+@media screen and (min-width: 1200px) {
+    .footer-column {
+        width: 25%;
     }
 
-    .column-footer {
-        margin: 10px;
-        /* Adjust spacing */
-    }
-
-    .icons ul,
-    .our-service ul,
-    .quick-links ul {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icons li,
-    .our-service li,
-    .quick-links li {
-        margin: 0 10px;
-        /* Adjust spacing between items */
-    }
-
-    .our-service a,
-    .quick-links a {
-        margin-top: 0;
-        /* Remove top margin */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .container-footer {
-        flex-direction: column;
-    }
-
-    .footer-item {
-        flex: 100%;
-        /* Show 1 column, full width */
-    }
-
-    .icons ul,
-    .our-service ul,
-    .quick-links ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .icons li,
-    .our-service li,
-    .quick-links li {
-        margin: 10px 0;
-        /* Adjust spacing between items */
+    .footer-section {
+        padding: 40px 0;
+    
     }
 }
 
