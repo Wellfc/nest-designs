@@ -1,0 +1,175 @@
+@import "./reset.css";
+@import "./global.css";
+@import "./index.css";
+
+
+/*------------------HERO--------------------*/
+.hero-detail {
+    position: relative;
+    width: 100%;
+    height: calc(45vh);
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.hero-background-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/living-room-2732939_1920.jpg') center/cover no-repeat;
+    background-color: black;
+}
+
+.overlay-detail {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay-detail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 1% 1%, transparent 1%, rgba(0, 0, 0, 0.6) 5%);
+    background-size: 10px 10px;
+    /* Ajuste o tamanho dos dots conforme necessário */
+    pointer-events: none;
+}
+
+.content-hero-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-hero-detail h1 {
+    font-weight: 700;
+    color: var(--app-white);
+    font-size: 55px;
+    line-height: 1.2;
+    padding: 5px 0 30px 0;
+}
+
+.content-hero-detail h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--app-white);
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+}
+
+/*------------------DETAILS--------------------*/
+
+.container-detail {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.detail-column {
+    flex: 1;
+    padding: 0 0 10px 25px;
+    box-sizing: border-box;
+    background-color: var(--app-white);
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.detail-image { 
+    background-image: url('../img/pexels-photo-2724748.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.detail-content { 
+    background-color: var(--app-white);
+}
+
+.container-detail p {
+    margin-bottom: 15px;
+}
+
+.container-detail h2 {
+    color: var(--app-dark-gray);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container-detail h3 {
+    color: var(--app-orange);
+    font-size: 20px;
+}
+
+.container-detail h4 {
+    color: var(--app-dark-gray);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.currency {
+    font-weight: bold;
+    color: var(--app-orange);
+}
+
+.amount {
+    font-weight: bold;
+    color: var(--app-orange);
+    font-size: 30px;
+}
+
+.detail-content ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.detail-content li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.detail-content li:before {
+    content: '\2022'; 
+    color: var(--app-orange);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+hr {
+    border: 1px solid #e0e0e0; /* Cor da linha preta */
+    margin: 20px 0; /* Margem para espaçamento */
+}
+
+/*---------------RESPONSIVE DESIGN-----------------*/
+
+@media screen and (max-width: 768px) {
+    .container-detail {
+        flex-direction: column; 
+        margin-bottom: 40px;
+    }
+    
+    .detail-column {
+        flex: none;
+        height: 250px; 
+        max-height: none;
+        margin-bottom: 25px;
+        padding: 0 0 10px 0;
+    }
+
+    .detail-column:nth-child(2) {
+        height: 100%; 
+    }
+}
