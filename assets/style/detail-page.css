@@ -38,7 +38,6 @@
     height: 100%;
     background: radial-gradient(circle at 1% 1%, transparent 1%, rgba(0, 0, 0, 0.6) 5%);
     background-size: 10px 10px;
-    /* Ajuste o tamanho dos dots conforme necessário */
     pointer-events: none;
 }
 
@@ -149,8 +148,8 @@
 }
 
 hr {
-    border: 1px solid #e0e0e0; /* Cor da linha preta */
-    margin: 20px 0; /* Margem para espaçamento */
+    border: 1px solid #e0e0e0; 
+    margin: 20px 0;
 }
 
 /*---------------RESPONSIVE DESIGN-----------------*/

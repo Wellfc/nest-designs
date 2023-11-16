@@ -8,7 +8,7 @@
     width: 100%;
     height: calc(100vh);
     overflow: hidden;
-    margin-bottom: 60px;
+    
 }
 
 .hero-details {
@@ -16,7 +16,7 @@
     width: 100%;
     height: calc(50vh);
     overflow: hidden;
-    margin-bottom: 60px;
+    
 }
 
 
@@ -46,7 +46,6 @@
     height: 100%;
     background: radial-gradient(circle at 1% 1%, transparent 1%, rgba(0, 0, 0, 0.6) 5%);
     background-size: 10px 10px;
-    /* Ajuste o tamanho dos dots conforme necessário */
     pointer-events: none;
 }
 
@@ -74,7 +73,93 @@
     line-height: 1.2;
 }
 
+/*------------------ABOUT--------------------*/
+
+.about-background {
+    background-color: #efefef;
+    padding: 0;
+    padding: 60px 0 60px 0;
+}
+
+.container-about {
+    display: flex;
+    width: 100%;
+}
+
+.about-column {
+    flex: 1;
+    padding: 0 0 10px 25px;
+    box-sizing: border-box;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.about-image { 
+    background-image: url('../img/living-room-2732939_1920.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.detail-content { 
+    background-color: var(--app-white);
+}
+
+.container-about h2 {
+    color: var(--app-dark-gray);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container-about h3 {
+    color: var(--app-orange);
+    font-size: 20px;
+}
+
+.container-about h4 {
+    color: var(--app-dark-gray);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.currency {
+    font-weight: bold;
+    color: var(--app-orange);
+}
+
+.amount {
+    font-weight: bold;
+    color: var(--app-orange);
+    font-size: 30px;
+}
+
+
+/*----------RESPONSIVENESS ABOUT SECTION------------*/
+
+@media screen and (max-width: 768px) {
+    .container-about {
+        flex-direction: column; 
+    }
+    
+    .about-column {
+        flex: none;
+        height: 250px; 
+        max-height: none;
+        padding: 0 0 10px 0;
+    }
+
+    .about-column:nth-child(2) {
+        height: 100%; 
+    }
+}
+
 /*-------------FEATURED SECTION---------------*/
+
+.featured-background {
+    background-color: var(--app-white);
+    padding: 0;
+    padding: 60px 0 60px 0;
+}
 .services-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -127,7 +212,6 @@
     border-radius: 50%;
     outline: 1px solid var(--app-white);
     margin-bottom: 10px;
-
 }
 
 .featured-container {
@@ -138,14 +222,11 @@
 }
 
 .featured-column {
-    
     transition: transform 0.3s ease;
     transform: scaleY(1);
     transform-origin: top;
-    margin-bottom: 20px;
     text-align: center;
     justify-content: center;
-    padding-bottom: 45px;
 }
 
 .featured-column:hover {
