@@ -19,16 +19,11 @@ This project is an open-license developing using:
 <img src="https://img.shields.io/badge/code-javascript-informational?style=for-the-badge&logo=javascript&logoColor=white&color=2aa889"/>&nbsp;
 
 ## Documentation Links
-- [Website Demo](#) ('https://wellfc.github.io/nest-designs/')
-- [Project Structure](#project-structure)
-- [Testing Instructions](#testing-instructions)
-- [Contact Information](#contact-information)
-- [Acknowledgements](#acknowledgements)
-- [Version History](#version-history)
-- [Code Example](#code-example)
+- [Website Demo](#) ('https://rosanunezrivera.github.io/nest-designs/')
 
 ## Project Structure
 The project consists of HTML, CSS, and JavaScript files organized in the following structure:
+```
 project/
 │
 ├── assets/
@@ -43,6 +38,7 @@ project/
 │ └── (image files)
 ├── index.html
 └── services.html
+```
 
 ## Testing Instructions
 1. Open `index.html` in a web browser.
