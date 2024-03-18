@@ -53,9 +53,10 @@ project/
 ## Contact Information
 For any inquiries or support, please contact Nest Designs at:
 
-
 ## Acknowledgements
-Special thanks to the Nest Designs Team for their efforts in developing this website.
+This project was a collaborative effort with the following contributors:
+- [Andre Cantuaria](https://github.com/andrecantuaria)
+- [Wellfc](https://github.com/Wellfc)
 
 ## Version History
 - v1.0 (November 2023): Initial release.
