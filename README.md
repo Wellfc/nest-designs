@@ -53,6 +53,7 @@ For any inquiries or support, please contact Nest Designs at:
 This project was a collaborative effort with the following contributors:
 - [Andre Cantuaria](https://github.com/andrecantuaria)
 - [Wellfc](https://github.com/Wellfc)
+- [RosaNunezRivera](https://github.com/RosaNunezRivera)
 
 ## Version History
 - v1.0 (November 2023): Initial release.
