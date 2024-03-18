@@ -19,7 +19,7 @@ This project is an open-license developing using:
 <img src="https://img.shields.io/badge/code-javascript-informational?style=for-the-badge&logo=javascript&logoColor=white&color=2aa889"/>&nbsp;
 
 ## Documentation Links
-Click [here](https://github.com/Wellfc/nest-designs)/) to test the application
+Click [here](https://github.com/Wellfc/nest-designs/index.html) to test the application
 
 ## Project Structure
 The project consists of HTML, CSS, and JavaScript files organized in the following structure:
@@ -58,14 +58,65 @@ This project was a collaborative effort with the following contributors:
 - v1.0 (November 2023): Initial release.
 
 ## Code Example
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <!-- Meta Tags -->
-        <!-- Head content -->
-    </head>
-    <body>
-        <!-- HTML content -->
-    </body>
-</html>
+```<!-- Header-->
+    <header>
+        <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+        <div class="container flexbox">
+            <div class="logo">
+                <a href="index.html"><h2 class="logotype"><span class="bold">NEST DESIGN</span></h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+            <div class="btn btn-1">
+                <a href="#ourservices"><i class="fa-solid fa-right-to-bracket"></i></i> Sign in </a>
+            </div>
+            <div class="cart">
+                <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </div>
+        </div>
+    </header>
+```
+```<!-- LOGIN-MODAL -->
+            <div class="modal">
+                <div class="login__container">
+                    <span class="icon-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">
+                                Remember me</label>
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="modal-button">Login</button>
+                            <div class="login-register">
+                                <p>
+                                    Don't have an account?
+                                    <a href="#" class="register-link">
+                                        Register
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+```
